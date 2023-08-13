@@ -1,4 +1,4 @@
 package com.zzx.visitor;
 
-public class Like {
+public class Like implements Action {
 }
