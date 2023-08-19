@@ -1,8 +1,16 @@
 package com.zzx.visitor;
 
 public class Man implements Person {
-    private Action action;
     private String name;
+    private Action action;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Man(String name) {
         this.name = name;
@@ -11,6 +19,7 @@ public class Man implements Person {
     @Override
     public void accept(Action action) {
         this.action = action;
+        action.getManResult(this);
     }
 
     public void print() {

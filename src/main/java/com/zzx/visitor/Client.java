@@ -10,5 +10,13 @@ public class Client {
 
         lisi.print();
         zhangyuan.print();
+
+
+        ObjectStructure objectStructure = new ObjectStructure();
+        objectStructure.addPerson(lisi);
+        objectStructure.addPerson(zhangyuan);
+
+        objectStructure.attach(new Like());
+
     }
 }
